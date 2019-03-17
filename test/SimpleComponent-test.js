@@ -32,7 +32,7 @@ describe('<SimpleComponent />', () => {
 
   it('default "happy" state should be accurately rendered', () => {
     expect(wrapper.find('div').text()).to.equal(
-      'happy',
+      'I am just happy',
       'Default mood was incorrectly rendered.'
     );
   });
@@ -48,7 +48,7 @@ describe('<SimpleComponent />', () => {
   it('after click, "sad" state should be accurately rendered', () => {
     wrapper.find('div').simulate('click');
     expect(wrapper.find('div').text()).to.equal(
-      'sad',
+      'I am just sad',
       'Mood state incorrectly rendered after click.'
     );
   });
